@@ -49,7 +49,7 @@ func handleClient(conn net.Conn) {
 
 func ckerr(err error) {
     if err != nil {
-       fmt.Fprintf(os.Strerr, "Fatal error: %s ", err.Error() )
+       fmt.Fprintf(os.Stderr, "Fatal error: %s ", err.Error() )
        os.Exit(1)
     }
 }
