@@ -9,7 +9,7 @@ import (
 func main(){
 
   service := ":2000"
-  tcpAddr, err := net.ResolvrTCPAddr("tcp", service)
+  tcpAddr, err := net.ResolveTCPAddr("tcp", service)
   ckerr(err)
 
   listener, err := net.ListenTCP("tcp", tcpAddr)
